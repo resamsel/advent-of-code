@@ -1,5 +1,7 @@
-import {promises} from "fs";
+import {readFile} from "../io";
 import {day2a, day2b} from "./day2";
+
+const path = 'inputs/2021/day2.txt'
 
 describe('day2', () => {
     describe('day2a', () => {
@@ -20,7 +22,7 @@ forward 2`
         });
 
         it('should solve input A', (done) => {
-            promises.readFile('inputs/day2.txt', 'utf8')
+            readFile(path)
                 .then(day2a)
                 .finally(done)
         });
@@ -42,7 +44,7 @@ forward 2`
         });
 
         it('should solve input B', (done) => {
-            promises.readFile('inputs/day2.txt', 'utf8')
+            readFile(path)
                 .then(day2b)
                 .finally(done)
         });

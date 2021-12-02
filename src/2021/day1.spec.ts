@@ -1,6 +1,7 @@
 import {day1a, day1b} from "./day1";
-import {promises} from "fs";
+import {readFile} from "../io";
 
+const path = 'inputs/2021/day1.txt';
 describe('day1', () => {
     describe('day1a', () => {
         it('should solve sample A', () => {
@@ -24,7 +25,7 @@ describe('day1', () => {
         });
 
         it('should solve input A', (done) => {
-            promises.readFile('inputs/day1.txt', 'utf8')
+            readFile(path)
                 .then(day1a)
                 .finally(done)
         });
@@ -50,7 +51,7 @@ describe('day1', () => {
         });
 
         it('should solve input B', (done) => {
-            promises.readFile('inputs/day1.txt', 'utf8')
+            readFile(path)
                 .then(day1b)
                 .finally(done)
         });
