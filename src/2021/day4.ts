@@ -1,4 +1,4 @@
-import { transpose } from '../util';
+import { parseNumbers, transpose } from '../util';
 
 interface Item {
   value: number;
@@ -19,8 +19,7 @@ const parseBoard = (input: string): Board => {
     numbers: input.split('\n')
       .filter(x => x.trim() !== '')
       .map(line =>
-        line.split(/\s+/)
-          .map(x => parseInt(x, 10))
+        parseNumbers(line, /\s+/)
           .filter(x => !isNaN(x))
           .map(n => ({value: n, marked: false}))),
   });
@@ -30,8 +29,7 @@ export const parse = (input: string): Bingo => {
   const [numbersString, ...boardsString] = input
     .split('\n\n');
   return {
-    numbers: numbersString.split(',')
-      .map(x => parseInt(x, 10)),
+    numbers: parseNumbers(numbersString),
     boards: boardsString
       .map(x => parseBoard(x)),
   };
@@ -56,7 +54,7 @@ const markBoard = (board: Board, n: number): void => {
 
 export const solve = (parsed: Bingo): number => {
   let winnerBoard: Board, currentNumber: number;
-  parsed.numbers.find((value, index) => {
+  parsed.numbers.find(value => {
     parsed.boards.forEach(board => markBoard(board, value))
     const winner = parsed.boards.find(board => checkBoard(board))
     if (winner !== undefined) {
@@ -72,7 +70,7 @@ export const solve = (parsed: Bingo): number => {
 
 export const solveB = (parsed: Bingo): number => {
   let board: Board, currentNumber: number;
-  parsed.numbers.find((value, index) => {
+  parsed.numbers.find(value => {
     parsed.boards.forEach(board => markBoard(board, value))
     const lastBoards = parsed.boards.filter(board => !checkBoard(board))
     if (lastBoards.length === 1) {

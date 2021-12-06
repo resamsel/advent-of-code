@@ -1,3 +1,5 @@
+import { parseNumbers } from '../util';
+
 interface Coordinate {
   x: number;
   y: number;
@@ -11,8 +13,7 @@ interface Vent {
 export const parseVent = (input: string): Vent => {
   const [start, end] = input.split(' -> ')
     .map(coordinate => {
-      const [x, y] = coordinate.split(',')
-        .map(x => parseInt(x, 10));
+      const [x, y] = parseNumbers(coordinate);
       return {x, y};
     });
   return {start, end};

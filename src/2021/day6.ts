@@ -1,7 +1,7 @@
+import { parseNumbers } from '../util';
+
 export const parse = (input: string): number[] => {
-  return input.split(',')
-    .filter(x => x.trim() !== '')
-    .map(x => parseInt(x, 10));
+  return parseNumbers(input);
 };
 
 export const solve = (parsed: number[], generations: number): number => {
