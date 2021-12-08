@@ -19,14 +19,16 @@ npm run test
 
 ## [2021](https://adventofcode.com/2021)
 
-| Day | Puzzle                                                      | Solution                      |
-|-----|-------------------------------------------------------------|-------------------------------|
-| 1   | [Sonar Sweep](https://adventofcode.com/2021/day/1)          | [day1.ts](./src/2021/day1.ts) |
-| 2   | [Dive!](https://adventofcode.com/2021/day/2)                | [day2.ts](./src/2021/day2.ts) |
-| 3   | [Binary Diagnostic](https://adventofcode.com/2021/day/3)    | [day3.ts](./src/2021/day3.ts) |
-| 4   | [Giant Squid](https://adventofcode.com/2021/day/4)          | [day4.ts](./src/2021/day4.ts) |
-| 5   | [Hydrothermal Venture](https://adventofcode.com/2021/day/5) | [day5.ts](./src/2021/day5.ts) |
-| 6   | [Lanternfish](https://adventofcode.com/2021/day/6)          | [day6.ts](./src/2021/day6.ts) |
+| Day | Puzzle                                                         | Solution                      |
+|-----|----------------------------------------------------------------|-------------------------------|
+| 1   | [Sonar Sweep](https://adventofcode.com/2021/day/1)             | [day1.ts](./src/2021/day1.ts) |
+| 2   | [Dive!](https://adventofcode.com/2021/day/2)                   | [day2.ts](./src/2021/day2.ts) |
+| 3   | [Binary Diagnostic](https://adventofcode.com/2021/day/3)       | [day3.ts](./src/2021/day3.ts) |
+| 4   | [Giant Squid](https://adventofcode.com/2021/day/4)             | [day4.ts](./src/2021/day4.ts) |
+| 5   | [Hydrothermal Venture](https://adventofcode.com/2021/day/5)    | [day5.ts](./src/2021/day5.ts) |
+| 6   | [Lanternfish](https://adventofcode.com/2021/day/6)             | [day6.ts](./src/2021/day6.ts) |
+| 7   | [The Treachery of Whales](https://adventofcode.com/2021/day/7) | [day7.ts](./src/2021/day7.ts) |
+| 8   | [Seven Segment Search](https://adventofcode.com/2021/day/8)    | [day8.ts](./src/2021/day8.ts) |
 
 ## [2020](https://adventofcode.com/2020)
 
