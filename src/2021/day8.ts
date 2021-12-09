@@ -1,4 +1,5 @@
 import { List, Map } from 'immutable';
+import { sum } from '../util';
 
 interface Signal {
   patterns: List<string>;
@@ -24,7 +25,7 @@ export const parse = (input: string): List<Signal> => {
 export const solve = (parsed: List<Signal>): number => {
   return parsed
     .map(x => x.output.filter(o => [2, 4, 3, 7].includes(o.length)).size)
-    .reduce((sum, curr) => sum + curr, 0);
+    .reduce(sum, 0);
 };
 
 const minus = (a: string, b: string): string =>
@@ -93,7 +94,7 @@ export const solveB = (parsed: List<Signal>): number => {
     return parseInt(signal.output.map(output => signalMap.get(output))
       .join(''), 10);
   })
-    .reduce((sum, curr) => sum + curr, 0);
+    .reduce(sum, 0);
 };
 
 export const day8a = (input: string): number => {

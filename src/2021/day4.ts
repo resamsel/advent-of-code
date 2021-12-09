@@ -55,14 +55,14 @@ const markBoard = (board: Board, n: number): void => {
 export const solve = (parsed: Bingo): number => {
   let winnerBoard: Board, currentNumber: number;
   parsed.numbers.find(value => {
-    parsed.boards.forEach(board => markBoard(board, value))
-    const winner = parsed.boards.find(board => checkBoard(board))
+    parsed.boards.forEach(board => markBoard(board, value));
+    const winner = parsed.boards.find(board => checkBoard(board));
     if (winner !== undefined) {
-      winnerBoard = winner
-      currentNumber = value
-      return true
+      winnerBoard = winner;
+      currentNumber = value;
+      return true;
     }
-    return false
+    return false;
   });
 
   return sumUnmarked(winnerBoard!.numbers) * currentNumber!;
@@ -71,16 +71,16 @@ export const solve = (parsed: Bingo): number => {
 export const solveB = (parsed: Bingo): number => {
   let board: Board, currentNumber: number;
   parsed.numbers.find(value => {
-    parsed.boards.forEach(board => markBoard(board, value))
-    const lastBoards = parsed.boards.filter(board => !checkBoard(board))
+    parsed.boards.forEach(board => markBoard(board, value));
+    const lastBoards = parsed.boards.filter(board => !checkBoard(board));
     if (lastBoards.length === 1) {
-      board = lastBoards[0]
+      board = lastBoards[0];
     }
     if (lastBoards.length === 0) {
-      currentNumber = value
-      return true
+      currentNumber = value;
+      return true;
     }
-    return false
+    return false;
   });
 
   return sumUnmarked(board!.numbers) * currentNumber!;

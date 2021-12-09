@@ -1,4 +1,4 @@
-import { parseNumbers } from '../util';
+import { parseNumbers, sum } from '../util';
 
 export const parse = (input: string): number[] => {
   return parseNumbers(input);
@@ -22,7 +22,7 @@ export const solve = (parsed: number[], generations: number): number => {
       fishesMap[0], // 8
     ];
   }
-  return fishesMap.reduce((sum, curr) => sum + curr, 0);
+  return fishesMap.reduce(sum, 0);
 };
 
 export const day6a = (input: string): number => {

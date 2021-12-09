@@ -1,5 +1,5 @@
 import { List } from 'immutable';
-import { parseNumbers } from '../util';
+import { numericAsc, parseNumbers, sum } from '../util';
 
 export const parse = (input: string): List<number> => {
   return List(parseNumbers(input));
@@ -17,13 +17,13 @@ export const aggregateCost = (input: List<number>, target: number, cost: (distan
 };
 
 export const solve = (parsed: List<number>): number => {
-  const median = parsed.sort((a, b) => a - b)
+  const median = parsed.sort(numericAsc)
     .get(Math.floor(parsed.size / 2))!;
   return aggregateCost(parsed, median, x => x);
 };
 
 export const solveB = (parsed: List<number>): number => {
-  const avg = parsed.reduce((sum, curr) => sum + curr, 0) / parsed.size;
+  const avg = parsed.reduce(sum, 0) / parsed.size;
   return Math.min(
     aggregateCost(parsed, Math.floor(avg), summedCost),
     aggregateCost(parsed, Math.ceil(avg), summedCost),

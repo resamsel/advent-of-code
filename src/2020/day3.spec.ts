@@ -1,7 +1,8 @@
-import {day3} from "./day3";
+import { day3 } from './day3';
 
 describe('day3', () => {
-    it('should solve', (done) => {
-        day3().finally(done)
-    });
+  it('should solve', (done) => {
+    day3()
+      .finally(done);
+  });
 });

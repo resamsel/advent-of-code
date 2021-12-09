@@ -1,4 +1,4 @@
-import { transpose } from '../util';
+import { countOccurrences, transpose } from '../util';
 
 export const parse = (input: string): number[][] => {
   return input
@@ -7,14 +7,12 @@ export const parse = (input: string): number[][] => {
     .map(x => [...x].map(x => parseInt(x, 10)));
 };
 
-export const count = (input: number[], v: number): number => input.filter(x => x === v).length;
-
 export const solve = (parsed: number[][]): number => {
   const gamma = parseInt(transpose(parsed)
-    .map(x => count(x, 0) > count(x, 1) ? 0 : 1)
+    .map(x => countOccurrences(x, 0) > countOccurrences(x, 1) ? 0 : 1)
     .join(''), 2);
   const epsilon = parseInt(transpose(parsed)
-    .map(x => count(x, 0) > count(x, 1) ? 1 : 0)
+    .map(x => countOccurrences(x, 0) > countOccurrences(x, 1) ? 1 : 0)
     .join(''), 2);
   console.log(`Gamma: ${gamma}, Epsilon: ${epsilon}`);
   return gamma * epsilon;
@@ -26,7 +24,7 @@ const oxygenGeneratorRating = (input: number[][]): number => {
       return filtered;
     }
     const bits = transpose(filtered)[i];
-    const newFilter = count(bits, 0) > count(bits, 1) ? 0 : 1;
+    const newFilter = countOccurrences(bits, 0) > countOccurrences(bits, 1) ? 0 : 1;
     return filtered.filter(x => x[i] === newFilter);
   }, input);
 
@@ -39,7 +37,7 @@ const co2ScrubberRating = (input: number[][]): number => {
       return filtered;
     }
     const bits = transpose(filtered)[i];
-    const newFilter = count(bits, 0) > count(bits, 1) ? 1 : 0;
+    const newFilter = countOccurrences(bits, 0) > countOccurrences(bits, 1) ? 1 : 0;
     return filtered.filter(x => x[i] === newFilter);
   }, input);
 
