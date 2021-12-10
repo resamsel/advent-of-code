@@ -37,3 +37,7 @@ export const cartesianProduct = <T>(...allEntries: T[][]): T[][] => {
 
 export const countOccurrences = <T>(input: T[], v: T): number =>
   input.filter(x => x === v).length;
+
+export const nonEmpty = (s: string): boolean => s.trim() !== '';
+
+export const nonUndefined = (i: any | undefined): boolean => i !== undefined;
