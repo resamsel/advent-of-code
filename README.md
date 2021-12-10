@@ -49,5 +49,6 @@ npm run test
 |  11 | [Seating System](https://adventofcode.com/2020/day/11)          | [day11.ts](./src/2020/day11.ts) | [day11.spec.ts](./src/2020/day11.spec.ts) |
 |  12 | [Rain Risk](https://adventofcode.com/2020/day/12)               | [day12.ts](./src/2020/day12.ts) | [day12.spec.ts](./src/2020/day12.spec.ts) |
 |  13 | [Shuttle Search](https://adventofcode.com/2020/day/13)          | [day13.ts](./src/2020/day13.ts) | [day13.spec.ts](./src/2020/day13.spec.ts) |
-|  14 | [Docking Data](https://adventofcode.com/2020/day/14)            | [day13.ts](./src/2020/day14.ts) | [day14.spec.ts](./src/2020/day14.spec.ts) |
-|  15 | [Rambunctious Recitation](https://adventofcode.com/2020/day/15) | [day13.ts](./src/2020/day15.ts) | [day15.spec.ts](./src/2020/day15.spec.ts) |
+|  14 | [Docking Data](https://adventofcode.com/2020/day/14)            | [day14.ts](./src/2020/day14.ts) | [day14.spec.ts](./src/2020/day14.spec.ts) |
+|  15 | [Rambunctious Recitation](https://adventofcode.com/2020/day/15) | [day15.ts](./src/2020/day15.ts) | [day15.spec.ts](./src/2020/day15.spec.ts) |
+|  16 | [Ticket Translation](https://adventofcode.com/2020/day/16)      | [day16.ts](./src/2020/day16.ts) | [day16.spec.ts](./src/2020/day16.spec.ts) |
