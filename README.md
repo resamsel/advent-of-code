@@ -31,6 +31,7 @@ npm run test
 |   8 | [Seven Segment Search](https://adventofcode.com/2021/day/8)    | [day8.ts](./src/2021/day8.ts)   | [day8.spec.ts](./src/2021/day8.spec.ts)   |
 |   9 | [Smoke Basin](https://adventofcode.com/2021/day/9)             | [day9.ts](./src/2021/day9.ts)   | [day9.spec.ts](./src/2021/day9.spec.ts)   |
 |  10 | [Syntax Scoring](https://adventofcode.com/2021/day/10)         | [day10.ts](./src/2021/day10.ts) | [day10.spec.ts](./src/2021/day10.spec.ts) |
+|  11 | [Dumbo Octopus](https://adventofcode.com/2021/day/11)          | [day11.ts](./src/2021/day11.ts) | [day11.spec.ts](./src/2021/day11.spec.ts) |
 
 ## [2020](https://adventofcode.com/2020)
 
