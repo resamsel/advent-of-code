@@ -89,7 +89,7 @@ const mapEdges = (edges: Edge[]): Record<string, Edge[]> => {
   }, {} as Record<string, Edge[]>);
 };
 
-export const breathFirst = (
+export const findPathsBreadthFirst = (
   edges: Edge[],
   paths: Set<Path>,
   addEdge: (paths: Set<Path>, path: Path, candidate: Edge) => Set<Path>,
@@ -112,11 +112,11 @@ export const breathFirst = (
 };
 
 export const solveA = (parsed: Edge[]): number => {
-  return breathFirst(parsed, addPath(Set(), List.of('start'), false), addEdgeA).size;
+  return findPathsBreadthFirst(parsed, addPath(Set(), List.of('start'), false), addEdgeA).size;
 };
 
 export const solveB = (parsed: Edge[]): number => {
-  return breathFirst(parsed, addPath(Set(), List.of('start'), false), addEdgeB).size;
+  return findPathsBreadthFirst(parsed, addPath(Set(), List.of('start'), false), addEdgeB).size;
 };
 
 if (process.argv.length === 2) {
