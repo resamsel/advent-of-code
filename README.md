@@ -32,6 +32,7 @@ npm run test
 |   9 | [Smoke Basin](https://adventofcode.com/2021/day/9)             | [day9.ts](./src/2021/day9.ts)   | [day9.spec.ts](./src/2021/day9.spec.ts)   |
 |  10 | [Syntax Scoring](https://adventofcode.com/2021/day/10)         | [day10.ts](./src/2021/day10.ts) | [day10.spec.ts](./src/2021/day10.spec.ts) |
 |  11 | [Dumbo Octopus](https://adventofcode.com/2021/day/11)          | [day11.ts](./src/2021/day11.ts) | [day11.spec.ts](./src/2021/day11.spec.ts) |
+|  12 | [Passage Pathing](https://adventofcode.com/2021/day/12)        | [day12.ts](./src/2021/day12.ts) | [day12.spec.ts](./src/2021/day12.spec.ts) |
 
 ## [2020](https://adventofcode.com/2020)
 
