@@ -17,6 +17,18 @@ Load the project in your favourite IDE and execute the matching test. Alternativ
 npm run test
 ```
 
+## [2022](https://adventofcode.com/2022)
+
+| Day | Puzzle                                                         | Solution                      | Test                                    |
+|----:|----------------------------------------------------------------|-------------------------------|-----------------------------------------|
+|   1 | [Calorie Counting](https://adventofcode.com/2022/day/1)        | [day1.ts](./src/2022/day1.ts) | [day1.spec.ts](./src/2022/day1.spec.ts) |
+|   2 | [Rock Paper Scissors](https://adventofcode.com/2022/day/2)     | [day2.ts](./src/2022/day2.ts) | [day2.spec.ts](./src/2022/day2.spec.ts) |
+|   3 | [Rucksack Reorganization](https://adventofcode.com/2022/day/3) | [day3.ts](./src/2022/day3.ts) | [day3.spec.ts](./src/2022/day3.spec.ts) |
+|   4 | [Camp Cleanup](https://adventofcode.com/2022/day/4)            | [day4.ts](./src/2022/day4.ts) | [day4.spec.ts](./src/2022/day4.spec.ts) |
+|   5 | [Supply Stacks](https://adventofcode.com/2022/day/5)           | [day5.ts](./src/2022/day5.ts) | [day5.spec.ts](./src/2022/day5.spec.ts) |
+|   6 | [Tuning Trouble](https://adventofcode.com/2022/day/6)          | [day6.ts](./src/2022/day6.ts) | [day6.spec.ts](./src/2022/day6.spec.ts) |
+|   7 | [No Space Left On Device](https://adventofcode.com/2022/day/7) | [day7.ts](./src/2022/day7.ts) | [day7.spec.ts](./src/2022/day7.spec.ts) |
+
 ## [2021](https://adventofcode.com/2021)
 
 | Day | Puzzle                                                         | Solution                        | Test                                      |
