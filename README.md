@@ -29,6 +29,7 @@ npm run test
 |   6 | [Tuning Trouble](https://adventofcode.com/2022/day/6)          | [day6.ts](./src/2022/day6.ts) | [day6.spec.ts](./src/2022/day6.spec.ts) |
 |   7 | [No Space Left On Device](https://adventofcode.com/2022/day/7) | [day7.ts](./src/2022/day7.ts) | [day7.spec.ts](./src/2022/day7.spec.ts) |
 |   8 | [Treetop Tree House](https://adventofcode.com/2022/day/8)      | [day8.ts](./src/2022/day8.ts) | [day8.spec.ts](./src/2022/day8.spec.ts) |
+|   9 | [Rope Bridge](https://adventofcode.com/2022/day/9)             | [day9.ts](./src/2022/day9.ts) | [day9.spec.ts](./src/2022/day9.spec.ts) |
 
 ## [2021](https://adventofcode.com/2021)
 
